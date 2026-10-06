@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký người dùng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h1>Đăng ký người dùng</h1>
+            <p class="subtitle">Vui lòng nhập đầy đủ thông tin bên dưới</p>
+
+            <form action="http://demo.codegym.vn/6/registration_form/register.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Giới tính</label>
+                    <div class="gender-options">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Nam" required>
+                            <span>Nam</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Nữ">
+                            <span>Nữ</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Khác">
+                            <span>Khác</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
